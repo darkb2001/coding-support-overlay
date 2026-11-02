@@ -1,0 +1,592 @@
+{
+  "ok": true,
+  "scope": "Wall-clock synthetic Node/STT check; not Electron, human accuracy or LLM quality validation",
+  "elapsedMinutes": 15.01,
+  "silentOnlyFlush": "passed",
+  "counts": {
+    "Me": 59,
+    "Others": 92
+  },
+  "phases": [
+    {
+      "language": "vi",
+      "atMinute": 0.05,
+      "firstPartialMs": 1118,
+      "switchMs": 0,
+      "flushMs": 650
+    },
+    {
+      "language": "en",
+      "atMinute": 0.17,
+      "firstPartialMs": 4168,
+      "switchMs": 4349,
+      "flushMs": 373
+    },
+    {
+      "language": "vi",
+      "atMinute": 0.28,
+      "firstPartialMs": 8293,
+      "switchMs": 8706,
+      "flushMs": 1583
+    },
+    {
+      "language": "vi",
+      "atMinute": 1.08,
+      "firstPartialMs": 842,
+      "switchMs": 0,
+      "flushMs": 777
+    },
+    {
+      "language": "vi",
+      "atMinute": 2.08,
+      "firstPartialMs": 842,
+      "switchMs": 0,
+      "flushMs": 784
+    },
+    {
+      "language": "vi",
+      "atMinute": 3.08,
+      "firstPartialMs": 998,
+      "switchMs": 0,
+      "flushMs": 822
+    },
+    {
+      "language": "vi",
+      "atMinute": 4.07,
+      "firstPartialMs": 843,
+      "switchMs": 0,
+      "flushMs": 767
+    },
+    {
+      "language": "en",
+      "atMinute": 5.02,
+      "firstPartialMs": 8880,
+      "switchMs": 9127,
+      "flushMs": 480
+    },
+    {
+      "language": "en",
+      "atMinute": 5.23,
+      "firstPartialMs": 731,
+      "switchMs": 0,
+      "flushMs": 291
+    },
+    {
+      "language": "en",
+      "atMinute": 6.06,
+      "firstPartialMs": 685,
+      "switchMs": 0,
+      "flushMs": 291
+    },
+    {
+      "language": "en",
+      "atMinute": 7.08,
+      "firstPartialMs": 564,
+      "switchMs": 0,
+      "flushMs": 284
+    },
+    {
+      "language": "en",
+      "atMinute": 8.1,
+      "firstPartialMs": 557,
+      "switchMs": 0,
+      "flushMs": 284
+    },
+    {
+      "language": "en",
+      "atMinute": 9.12,
+      "firstPartialMs": 699,
+      "switchMs": 0,
+      "flushMs": 284
+    },
+    {
+      "language": "vi",
+      "atMinute": 10.09,
+      "firstPartialMs": 4087,
+      "switchMs": 4285,
+      "flushMs": 941
+    },
+    {
+      "language": "vi",
+      "atMinute": 10.28,
+      "firstPartialMs": 873,
+      "switchMs": 0,
+      "flushMs": 780
+    },
+    {
+      "language": "vi",
+      "atMinute": 11.15,
+      "firstPartialMs": 1079,
+      "switchMs": 0,
+      "flushMs": 920
+    },
+    {
+      "language": "vi",
+      "atMinute": 12.15,
+      "firstPartialMs": 905,
+      "switchMs": 0,
+      "flushMs": 821
+    },
+    {
+      "language": "vi",
+      "atMinute": 13.15,
+      "firstPartialMs": 853,
+      "switchMs": 0,
+      "flushMs": 772
+    },
+    {
+      "language": "vi",
+      "atMinute": 14.15,
+      "firstPartialMs": 850,
+      "switchMs": 0,
+      "flushMs": 784
+    }
+  ],
+  "checkpoints": [
+    {
+      "minute": 1.21,
+      "counts": {
+        "Me": 6,
+        "Others": 8
+      },
+      "audioMinutesPerSource": 1.18,
+      "heapMiB": 19.7,
+      "rssMiB": 56.1,
+      "retainedSamples": 14,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.93
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.35
+        }
+      }
+    },
+    {
+      "minute": 2.21,
+      "counts": {
+        "Me": 10,
+        "Others": 13
+      },
+      "audioMinutesPerSource": 2.18,
+      "heapMiB": 19.3,
+      "rssMiB": 53.6,
+      "retainedSamples": 23,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.79
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.34
+        }
+      }
+    },
+    {
+      "minute": 3.21,
+      "counts": {
+        "Me": 14,
+        "Others": 19
+      },
+      "audioMinutesPerSource": 3.17,
+      "heapMiB": 19.7,
+      "rssMiB": 54,
+      "retainedSamples": 33,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.96
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.38
+        }
+      }
+    },
+    {
+      "minute": 4.2,
+      "counts": {
+        "Me": 17,
+        "Others": 25
+      },
+      "audioMinutesPerSource": 4.17,
+      "heapMiB": 19,
+      "rssMiB": 51.8,
+      "retainedSamples": 42,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.92
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.37
+        }
+      }
+    },
+    {
+      "minute": 5.33,
+      "counts": {
+        "Me": 22,
+        "Others": 31
+      },
+      "audioMinutesPerSource": 5.24,
+      "heapMiB": 19.4,
+      "rssMiB": 53.8,
+      "retainedSamples": 53,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.1
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.66
+        }
+      }
+    },
+    {
+      "minute": 6.16,
+      "counts": {
+        "Me": 26,
+        "Others": 36
+      },
+      "audioMinutesPerSource": 6.07,
+      "heapMiB": 19.8,
+      "rssMiB": 54.6,
+      "retainedSamples": 62,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.07
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.63
+        }
+      }
+    },
+    {
+      "minute": 7.18,
+      "counts": {
+        "Me": 30,
+        "Others": 43
+      },
+      "audioMinutesPerSource": 7.09,
+      "heapMiB": 19.5,
+      "rssMiB": 55,
+      "retainedSamples": 73,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.04
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.48
+        }
+      }
+    },
+    {
+      "minute": 8.2,
+      "counts": {
+        "Me": 34,
+        "Others": 50
+      },
+      "audioMinutesPerSource": 8.11,
+      "heapMiB": 20,
+      "rssMiB": 56.1,
+      "retainedSamples": 84,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.01
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.45
+        }
+      }
+    },
+    {
+      "minute": 9.22,
+      "counts": {
+        "Me": 38,
+        "Others": 57
+      },
+      "audioMinutesPerSource": 9.13,
+      "heapMiB": 20,
+      "rssMiB": 56.2,
+      "retainedSamples": 95,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 0.98
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.42
+        }
+      }
+    },
+    {
+      "minute": 10.4,
+      "counts": {
+        "Me": 43,
+        "Others": 65
+      },
+      "audioMinutesPerSource": 10.31,
+      "heapMiB": 19.7,
+      "rssMiB": 56.9,
+      "retainedSamples": 108,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.92
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.34
+        }
+      }
+    },
+    {
+      "minute": 11.29,
+      "counts": {
+        "Me": 46,
+        "Others": 70
+      },
+      "audioMinutesPerSource": 11.19,
+      "heapMiB": 20.3,
+      "rssMiB": 57.1,
+      "retainedSamples": 116,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 2.08
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.68
+        }
+      }
+    },
+    {
+      "minute": 12.28,
+      "counts": {
+        "Me": 49,
+        "Others": 76
+      },
+      "audioMinutesPerSource": 12.19,
+      "heapMiB": 19.7,
+      "rssMiB": 57.6,
+      "retainedSamples": 125,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.97
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.36
+        }
+      }
+    },
+    {
+      "minute": 13.28,
+      "counts": {
+        "Me": 53,
+        "Others": 81
+      },
+      "audioMinutesPerSource": 13.19,
+      "heapMiB": 19.8,
+      "rssMiB": 57.7,
+      "retainedSamples": 134,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.93
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.35
+        }
+      }
+    },
+    {
+      "minute": 14.28,
+      "counts": {
+        "Me": 57,
+        "Others": 87
+      },
+      "audioMinutesPerSource": 14.18,
+      "heapMiB": 20.1,
+      "rssMiB": 57.9,
+      "retainedSamples": 144,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.92
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.34
+        }
+      }
+    },
+    {
+      "minute": 15.01,
+      "counts": {
+        "Me": 59,
+        "Others": 92
+      },
+      "audioMinutesPerSource": 14.9,
+      "heapMiB": 20.4,
+      "rssMiB": 58.1,
+      "retainedSamples": 151,
+      "streams": {
+        "Me": {
+          "pendingAcks": 0,
+          "unackedBytes": 0,
+          "queuedBytes": 0,
+          "finalLagSeconds": 0
+        },
+        "Others": {
+          "pendingAcks": 0,
+          "unackedBytes": 0,
+          "queuedBytes": 0,
+          "finalLagSeconds": 0.1
+        }
+      }
+    }
+  ],
+  "peaks": {
+    "queuedBytes": 1600,
+    "unackedBytes": 64000,
+    "pendingAcks": 40,
+    "pacingLagMs": 36
+  },
+  "transcriptTurns": 151,
+  "finals": [
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+      "ts": 1792213829069
+    },
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+      "ts": 1792213843109
+    },
+    {
+      "speaker": "Me",
+      "text": "Tôi dùng Real. Tái sờ dụng Node.js và to interest. Để phát triển phần mềm, tôi dùng Real. Tái sở Node.js và PostgreSQL Interest để phát triển phần mềm. Mềm.",
+      "ts": 1792213836269
+    },
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+      "ts": 1792213852829
+    },
+    {
+      "speaker": "Me",
+      "text": "tôi dùng Real. Tái sờ của nó và to interest. Để phát triển phần mềm",
+      "ts": 1792213852889
+    },
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+      "ts": 1792213860029
+    },
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+      "ts": 1792213874789
+    },
+    {
+      "speaker": "Me",
+      "text": "Tôi dùng Real. Tái Node.js và to để phát triển phần mềm Phần mềm. Tôi dùng Real. Tái sử Node.js và To interest Để phát triển phần mềm mềm.",
+      "ts": 1792213868309
+    },
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+      "ts": 1792213881629
+    },
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+      "ts": 1792213896029
+    },
+    {
+      "speaker": "Me",
+      "text": "Tôi dùng Real. Tái Node.js và PostgreSQL Để phát triển phần mềm Phần mềm, tôi dùng. Real. Tái sử dụng. Nó và to interest. Để phát triển phần mềm.",
+      "ts": 1792213888829
+    },
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế?",
+      "ts": 1792213902869
+    }
+  ],
+  "errors": []
+}

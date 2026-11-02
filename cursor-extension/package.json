@@ -1,0 +1,74 @@
+{
+  "name": "coding-support-bridge",
+  "displayName": "Coding Support Bridge",
+  "description": "HTTP bridge for Coding Support Overlay to call AI APIs (Gemini, OpenAI, DeepSeek, etc.)",
+  "version": "1.0.11",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codingSupport.restart",
+        "title": "Coding Support: Restart Bridge Server"
+      },
+      {
+        "command": "codingSupport.openSettings",
+        "title": "Coding Support: Open Settings"
+      }
+    ],
+    "configuration": {
+      "title": "Coding Support",
+      "properties": {
+        "codingSupport.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "API key for your AI provider (Gemini, OpenAI, DeepSeek, etc.)"
+        },
+        "codingSupport.provider": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "gemini",
+            "openai"
+          ],
+          "default": "auto",
+          "description": "API provider format. 'auto' detects from model name."
+        },
+        "codingSupport.model": {
+          "type": "string",
+          "default": "gemini-2.5-flash",
+          "description": "Model name. Examples: gemini-2.5-flash | gemini-2.5-pro | gpt-4o | deepseek-chat | claude-3-5-sonnet-20241022"
+        },
+        "codingSupport.apiBaseUrl": {
+          "type": "string",
+          "default": "",
+          "description": "Optional OpenAI-compatible base URL (include /v1). Overrides the provider URL. Example (9Router): http://localhost:20128/v1"
+        },
+        "codingSupport.visionSupported": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable image input (vision). Supported by: Gemini 1.5+, GPT-4o, Claude 3+. Disable for text-only models."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "vscode:prepublish": "npm run compile",
+    "package": "npx @vscode/vsce package --no-dependencies --allow-missing-repository --allow-star-activation"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.5.2"
+  }
+}

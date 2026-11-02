@@ -1,0 +1,23 @@
+node_modules/
+dist/
+out/
+build/
+*.node
+*.o
+*.vsix
+.DS_Store
+screenshots/
+meetings/
+sessions/
+userData/
+*.wav
+*.pcm
+# Local credentials: commit only the example template.
+.env
+.env.*
+!.env.example
+*.log
+bin/system-audio-capture
+bin/ggml-*.bin
+models/
+compile_commands.json

@@ -1,0 +1,47 @@
+{
+  "name": "coding-support-overlay",
+  "version": "1.0.15",
+  "description": "Floating always-on-top overlay for coding support via Cursor AI",
+  "main": "out/main/index.js",
+  "scripts": {
+    "predev": "npm run build:audio",
+    "dev": "electron-vite dev",
+    "prebuild": "npm run build:audio",
+    "build": "electron-vite build",
+    "build:audio": "node scripts/build-system-audio.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "test:ui": "node tests/ui-smoke.mjs",
+    "test:quit": "node tests/quit-smoke.mjs",
+    "test:audio": "npm run build:audio && node scripts/test-system-audio.mjs",
+    "test:soak": "node --test tests/meeting-soak.test.mjs",
+    "test:meeting-live": "node scripts/test-meeting-live.mjs",
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w ."
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "koffi": "^3.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^4.0.4",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/ws": "^8.18.2",
+    "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^32.3.3",
+    "electron-vite": "^2.3.0",
+    "esbuild": "^0.21.5",
+    "node-gyp": "^12.3.0",
+    "typescript": "^5.5.2",
+    "vite": "^5.3.1"
+  },
+  "allowScripts": {
+    "electron@32.3.3": true
+  }
+}

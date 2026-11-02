@@ -1,0 +1,47 @@
+# Secrets are local. Only empty/synthetic example templates belong in Git.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies and generated output (kept locally when needed to run the app).
+node_modules/
+out/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+*.node
+*.o
+*.vsix
+*.log
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.vscode/
+
+# Runtime/private captures, recordings and app profiles.
+screenshots/
+meetings/
+sessions/
+userData/
+*.wav
+*.pcm
+/image-prefer/
+
+# Downloaded/native runtime assets are not application source.
+/coding-support-overlay/models/
+/coding-support-overlay/bin/system-audio-capture
+/coding-support-overlay/bin/ggml-*.bin
+
+# Independent toolkit checkout, not part of this app's repository.
+/claudekit-engineer/
+
+# Local Cursor agent toolkit / internal planning (not the public product).
+.cursor/
+/plans/
+AGENTS.md
+CLAUDE.md

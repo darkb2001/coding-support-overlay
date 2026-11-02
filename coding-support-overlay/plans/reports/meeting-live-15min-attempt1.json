@@ -1,0 +1,13 @@
+{
+  "ok": false,
+  "phase": "initial vi probe",
+  "elapsedMinutes": 0.18,
+  "message": "No fresh partial during vi probe",
+  "counts": {
+    "Me": 1,
+    "Others": 1
+  },
+  "phases": [],
+  "checkpoints": [],
+  "errors": []
+}

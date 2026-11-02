@@ -1,0 +1,32 @@
+.provider-setup { position: absolute; inset: 0; z-index: 50; display: flex; flex-direction: column; overflow: hidden; color: #29312b; background: #fafbf8; -webkit-app-region: no-drag; font-size: 13px; }
+.provider-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 24px; border-bottom: 1px solid #d8dfd5; -webkit-app-region: drag; }
+.provider-top strong { display: flex; align-items: center; gap: 8px; font-size: 16px; }
+.provider-top svg { color: #467c50; }
+.provider-top > div { display: flex; gap: 8px; }
+.provider-setup button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font: inherit; font-size: 12px; padding: 8px 14px; min-height: 36px; border: 1px solid #ced7ca; border-radius: 8px; background: #f1f4ed; color: #344b3a; cursor: pointer; -webkit-app-region: no-drag; }
+.provider-setup button:hover:not(:disabled) { background: #e5eddf; }
+.provider-setup :is(input, select, button):focus-visible { outline: 2px solid #4b8659; outline-offset: 3px; }
+.provider-setup :is(input, select, button):disabled { opacity: .55; cursor: not-allowed; }
+.provider-content { width: 100%; max-width: 680px; align-self: center; padding: 28px 32px 24px; overflow-y: auto; min-height: 0; }
+.provider-content h1 { font-size: 27px; line-height: 1.2; font-weight: 600; letter-spacing: -.5px; margin-bottom: 12px; }
+.provider-content > p { color: #626b63; line-height: 1.65; margin-bottom: 22px; }
+.provider-content fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.provider-content label { display: block; margin-bottom: 7px; font-weight: 500; }
+.provider-content :is(input:not([type="checkbox"]), select) { display: block; width: 100%; min-width: 0; padding: 11px 12px; min-height: 43px; border: 1px solid #cbd4c7; border-radius: 8px; background: #fff; color: #29312b; font: inherit; margin-bottom: 18px; caret-color: #29312b; }
+.provider-content input::placeholder { color: #626b63; }
+.provider-content select { text-overflow: ellipsis; }
+.provider-columns { display: grid; grid-template-columns: 1fr 1.5fr; gap: 16px; }
+.provider-columns > div { min-width: 0; }
+.provider-catalog-status { display: flex; align-items: flex-start; gap: 16px; margin: -4px 0 20px; }
+.provider-catalog-status p { flex: 1; font-size: 11px; line-height: 1.6; color: #626b63; }
+.provider-catalog-status button { flex-shrink: 0; padding: 5px 10px; min-height: 30px; }
+.provider-content .provider-checkbox { display: flex; gap: 8px; align-items: center; font-size: 12px; }
+.provider-checkbox input { accent-color: #4b8659; }
+.provider-content .provider-note { font-size: 11px; color: #626b63; line-height: 1.65; margin: 8px 0 18px; }
+.provider-content .provider-primary { width: 100%; min-height: 45px; background: #303e34; border-color: transparent; color: white; font-size: 13px; margin: 6px 0 10px; }
+.provider-content .provider-primary:hover:not(:disabled) { background: #405747; }
+.provider-message { padding: 12px 14px; border-radius: 8px; margin: 14px 0; font-size: 12px; line-height: 1.6; overflow-wrap: anywhere; }
+.provider-message.is-error { background: #fbece8; color: #8c352c; }
+.provider-message.is-ok { background: #e8f1e5; color: #316e40; }
+.provider-setup ::selection { background: #c1dabd; color: #193322; }
+@media (max-width: 540px) { .provider-content { padding: 24px 20px; } .provider-columns { grid-template-columns: 1fr; gap: 0; } .provider-top { padding: 14px 20px; } }

@@ -1,0 +1,107 @@
+# Meeting 10/17/2026, 12:30:37 PM
+
+Created: 10/17/2026, 12:30:37 PM
+
+## Transcript
+
+- **[12:30:40 PM] Me:** Tôi dùng. Real TypeScript Node.js và To. Để phát triển phần mềm, Phần mềm
+- **[12:30:40 PM] Others:** Bạn giải thích cách thiết kế hệ thống, xử lý nhiều yêu cầu đồng thời được không?
+- **[12:30:49 PM] Others:** How would you design a rate limiter for concurrent requests across multiple servers
+- **[12:30:49 PM] Me:** I would use Redis for a distributed rate limiter and PostgreSQL for persistent data.
+- **[12:30:56 PM] Me:** Tôi dùng React. TypeScript. Node.js và PostgreSQL Để phát triển phần mềm, Phần mềm
+- **[12:30:56 PM] Others:** Bạn giải thích cách thiết kế hệ thống, xử lý nhiều yêu cầu đồng thời được không?
+- **[12:31:06 PM] Me:** Tôi dùng Tái Node.js và to Để phát triển phần mềm Phần mềm.
+- **[12:31:06 PM] Others:** Bạn giải thích cách thiết kế hệ thống, xử lý nhiều yêu cầu đồng thời được không?
+- **[12:31:13 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:31:20 PM] Me:** Tôi dùng React. Tái. Node.js và To để phát triển phần mềm mềm. Tôi dùng. Real tái sử dụng Norton và To. Để phát triển phần mềm.
+- **[12:31:27 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:31:34 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:31:44 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:31:44 PM] Me:** Tôi dùng real TypeScript. Norton và PostgreSQL Để phát triển phần mềm. Phần mềm.
+- **[12:31:51 PM] Me:** Tôi dùng. React. Tái tái Node.js và PostgreSQL Để để phát triển phần mềm. Phần mềm. Tôi dùng Real. Tái sờ Node.js và to. Để phát triển phần mềm Phần mềm.
+- **[12:31:58 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:32:06 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:32:13 PM] Me:** Tôi dùng real TypeScript. Node.js và PostgreSQL Để phát triển phần mềm. Phần mềm. Tôi dùng Real. Tái Node.js và to Để phát triển phần mềm Phần mềm.
+- **[12:32:20 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:32:27 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:32:34 PM] Me:** Tôi dùng Real TypeScript. Node.js và To để phát triển phần mềm mềm.
+- **[12:32:44 PM] Me:** Tôi dùng gia tái sở. Dụng nó và To Torres. Để phát triển phần mềm
+- **[12:32:44 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:32:51 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:32:52 PM] Me:** Tôi dùng Real tái Node.js và PostgreSQL Để phát triển phần mềm, Phần mềm
+- **[12:32:58 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:33:06 PM] Me:** Tôi dùng Real. Tái sử dụng Norton và To để phát triển phần mềm mềm. Tôi dùng Real. Tái sờ Norton. Và PostgreSQL Để phát triển phần mềm Phần mềm.
+- **[12:33:13 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:33:20 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:33:27 PM] Me:** Tôi dùng. Real. Tái sờ Flip Flops và To để phát triển phần mềm mềm. Tôi dùng real Tái sờ. Norton và Texture. Để phát triển phần mềm.
+- **[12:33:34 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:33:43 PM] Me:** Tôi dùng Real tái sờ.
+- **[12:33:43 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử.
+- **[12:33:47 PM] Others:** Linear.
+- **[12:33:47 PM] Me:** Not authorized for.
+- **[12:33:52 PM] Others:** How would you design a rate limiter for concurrent requests across multiple servers?
+- **[12:33:58 PM] Me:** I would use Redis for a distributed rate limiter and PostgreSQL for persistent data. I would use Redis for a distributed rate limiter and PostgreSQL for persistent data.
+- **[12:34:04 PM] Others:** How would you design a rate limiter for concurrent requests across multiple servers? How would you design a rate limiter for concurrent requests across multiple servers?
+- **[12:34:15 PM] Me:** I would use Redis for a distributed rate limiter and PostgreSQL for persistent data. I would use Redis for a distributed rate limiter and PostgreSQL for persistent data.
+- **[12:34:21 PM] Others:** How would you design a rate limiter for concurrent requests across multiple servers? How?
+- **[12:34:28 PM] Others:** Would you design a rate limiter for concurrent requests across multiple servers?
+- **[12:34:33 PM] Me:** I would use Redis for a distributed rate limiter and PostgreSQL for persistent data.
+- **[12:34:41 PM] Others:** How would you design a rate limiter for concurrent requests across multiple servers?
+- **[12:34:42 PM] Me:** I would use Redis for a distributed rate limiter and PostgreSQL for persistent data.
+- **[12:34:47 PM] Me:** I would use Redis for a distributed rate limiter and PostgreSQL for persistent data.
+- **[12:34:48 PM] Others:** How would you design a rate limiter for concurrent requests across multiple servers? How would you design a rate limiter for concurrent requests across multiple servers?
+- **[12:34:59 PM] Me:** I would use Redis for a distributed rate limiter and PostgreSQL for persistent data. I would use Redis for a distributed rate limiter and PostgreSQL for persistent data.
+- **[12:35:05 PM] Others:** How would you design a rate limiter for concurrent requests across multiple servers? How?
+- **[12:35:12 PM] Others:** Would you design a rate limiter for concurrent requests across multiple servers?
+- **[12:35:17 PM] Me:** I would use Redis for a distributed rate limiter and PostgreSQL for persistent data. I would use Redis for a distributed rate limiter and PostgreSQL for persistent data.
+- **[12:35:22 PM] Others:** How would you design a rate limiter for concurrent requests across multiple servers?
+- **[12:35:29 PM] Others:** How would you design a rate limiter for concurrent requests across multiple servers?
+- **[12:35:34 PM] Me:** I would use Redis for a distributed rate limiter and PostgreSQL for persistent data.
+- **[12:35:42 PM] Others:** How would you design a rate limiter for concurrent requests across multiple servers?
+- **[12:35:43 PM] Me:** I would use Redis for a distributed rate limiter and PostgreSQL for persistent data.
+- **[12:35:49 PM] Me:** I would use Redis for a distributed rate limiter and PostgreSQL for persistent data.
+- **[12:35:50 PM] Others:** How would you design a rate limiter for concurrent requests across multiple servers? How would you design a rate limiter for concurrent requests across multiple servers?
+- **[12:36:00 PM] Me:** I would use Redis for a distributed rate limiter and PostgreSQL for persistent data. I would use Redis for a distributed rate limiter and PostgreSQL for persistent data.
+- **[12:36:06 PM] Others:** How would you design a rate limiter for concurrent requests across multiple servers? How?
+- **[12:36:13 PM] Others:** Would you design a rate limiter for concurrent requests across multiple servers?
+- **[12:36:18 PM] Me:** I would use Redis for a distributed rate limiter and PostgreSQL for persistent data. I would use Redis for a distributed rate limiter and PostgreSQL for persistent data.
+- **[12:36:23 PM] Others:** How would you design a rate limiter for concurrent requests across multiple servers? How would you design a rate limiter for concurrent requests across multiple servers?
+- **[12:36:35 PM] Me:** I would use Redis for a distributed rate limiter and PostgreSQL for persistent data.
+- **[12:36:44 PM] Others:** How would you.
+- **[12:36:45 PM] Me:** I would use.
+- **[12:36:51 PM] Others:** Bạn giải thích cách thiết kế hệ thống, xử lý nhiều yêu cầu đồng thời được không?
+- **[12:36:51 PM] Me:** Tôi dùng React tái tái Node.js và PostgreSQL Để phát triển phần mềm, Phần mềm.
+- **[12:36:58 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:37:05 PM] Me:** Tôi dùng Real tái tái Slide và To stress để phát triển phần mềm. Tôi dùng Real tái sờ Node.js Notes PostgreSQL Để phát triển phần mềm, Phần mềm.
+- **[12:37:12 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:37:19 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:37:26 PM] Me:** Tôi dùng. Real. Tái sờ quét Flops và To stress để phát triển phần mềm Tôi dùng Real tái sờ của nó và To Torres để phát triển phần mềm
+- **[12:37:33 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:37:42 PM] Me:** Tôi dùng Real. Tái sờ của Node.js và to Interest để phát triển phần mềm
+- **[12:37:43 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:37:50 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:37:58 PM] Me:** Tôi dùng. Real tái sờ quyết Node.js và PostgreSQL. To interest để phát triển phần mềm Tôi dùng Real tái sờ của nó PostgreSQL Stress để phát triển phần mềm mềm.
+- **[12:38:05 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:38:12 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:38:19 PM] Me:** Chúng tôi dùng Real tái sờ quét và to stress để phát triển phần mềm. Tôi dùng Real tái sờ của nó. PostgreSQL interest để phát triển phần mềm mềm.
+- **[12:38:26 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:38:32 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:38:42 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:38:42 PM] Me:** Tôi dùng Real tái sờ quyết notes và PostgreSQL. Để phát triển phần mềm mềm.
+- **[12:38:49 PM] Me:** Tôi dùng. Real tái sờ của nó PostgreSQL stress để phát triển phần mềm mềm Tôi dùng Real tái sờ của nó và to interest để phát triển phần mềm.
+- **[12:38:57 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:39:04 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:39:11 PM] Me:** Tôi dùng real tái sờ clip Node.js và PostgreSQL. Để phát triển phần mềm phần mềm. Tôi dùng Real tái sờ của nó to stress để phát triển phần mềm mềm.
+- **[12:39:18 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:39:25 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:39:33 PM] Me:** Tôi dùng Real tái sờ của nó PostgreSQL. Stress để phát triển phần mềm mềm.
+- **[12:39:42 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:39:42 PM] Me:** Tôi dùng Real tái sờ của Node.js và to interest để phát triển phần mềm.
+- **[12:39:49 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:39:51 PM] Me:** Tôi dùng. Real tái sờ của nó to stress để phát triển phần mềm mềm.
+- **[12:39:57 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:40:04 PM] Me:** Tôi dùng Real tái sờ của nó. PostgreSQL Stress để phát triển phần mềm mềm Tôi dùng Real tái sờ clip Node.js và to interest để phát triển phần mềm.
+- **[12:40:11 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:40:18 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?
+- **[12:40:25 PM] Me:** Tôi dùng real tái Node.js. Và PostgreSQL. Để phát triển phần mềm phần mềm. Tôi dùng Real. Tái sờ của nó To stress để phát triển.
+- **[12:40:32 PM] Others:** Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?

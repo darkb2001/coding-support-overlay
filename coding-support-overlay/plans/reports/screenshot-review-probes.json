@@ -1,0 +1,16 @@
+{
+  "capturePending": {
+    "confirmed": true,
+    "observationMs": 450,
+    "sessionStopped": true,
+    "windowStillHidden": true,
+    "note": "Controlled native promise has not resolved; code has no capture timeout/stop wake. Not a claim that macOS was hung in a real user session."
+  },
+  "utf8": {
+    "confirmed": true,
+    "expected": "{\"reply\":\"Tiếng Việt: sửa lỗi chỉ số\"}",
+    "actual": "{\"reply\":\"Ti���ng Việt: sửa lỗi chỉ số\"}",
+    "replacementCharacter": true,
+    "scope": "production Bridge HTTP OpenAI image route against local synthetic provider"
+  }
+}

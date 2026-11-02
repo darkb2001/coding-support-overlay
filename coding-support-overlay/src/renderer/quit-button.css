@@ -1,0 +1,5 @@
+.overlay-quit[type="button"] { -webkit-app-region: no-drag; color: #ffe1dd; background: #852d35; border: 1px solid #a84b52; border-radius: 7px; padding: 6px 9px; font: inherit; font-size: 11px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 4px; min-height: 32px; flex-shrink: 0; }
+.overlay-quit[type="button"]:hover:not(:disabled) { color: #fff; background: #a23b44; }
+.overlay-quit[type="button"]:disabled { opacity: .65; cursor: wait; }
+.overlay-quit[type="button"]:focus-visible { outline: 2px solid #dc737b; outline-offset: 2px; }
+@media (max-width: 540px) { .meeting-app-header, .provider-top { flex-wrap: wrap; } .meeting-header-actions, .provider-top > div { margin-left: auto; } }

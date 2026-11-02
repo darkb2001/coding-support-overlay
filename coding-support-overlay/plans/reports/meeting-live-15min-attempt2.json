@@ -1,0 +1,352 @@
+{
+  "ok": false,
+  "phase": "wall-clock soak",
+  "elapsedMinutes": 11.07,
+  "message": "Speechmatics xử lý audio chậm hoặc mạng nghẽn; đã dừng để tránh tích lũy độ trễ.",
+  "counts": {
+    "Me": 45,
+    "Others": 68
+  },
+  "phases": [
+    {
+      "language": "vi",
+      "atMinute": 0.05,
+      "firstPartialMs": 1106,
+      "switchMs": 0,
+      "flushMs": 1005
+    },
+    {
+      "language": "en",
+      "atMinute": 0.18,
+      "firstPartialMs": 3871,
+      "switchMs": 3881,
+      "flushMs": 385
+    },
+    {
+      "language": "vi",
+      "atMinute": 0.28,
+      "firstPartialMs": 8347,
+      "switchMs": 8797,
+      "flushMs": 1563
+    },
+    {
+      "language": "vi",
+      "atMinute": 1.09,
+      "firstPartialMs": 907,
+      "switchMs": 0,
+      "flushMs": 874
+    },
+    {
+      "language": "vi",
+      "atMinute": 2.09,
+      "firstPartialMs": 823,
+      "switchMs": 0,
+      "flushMs": 769
+    },
+    {
+      "language": "vi",
+      "atMinute": 3.08,
+      "firstPartialMs": 806,
+      "switchMs": 0,
+      "flushMs": 734
+    },
+    {
+      "language": "vi",
+      "atMinute": 4.08,
+      "firstPartialMs": 896,
+      "switchMs": 0,
+      "flushMs": 836
+    },
+    {
+      "language": "en",
+      "atMinute": 5.03,
+      "firstPartialMs": 4087,
+      "switchMs": 4275,
+      "flushMs": 337
+    },
+    {
+      "language": "en",
+      "atMinute": 5.18,
+      "firstPartialMs": 523,
+      "switchMs": 0,
+      "flushMs": 312
+    },
+    {
+      "language": "en",
+      "atMinute": 6.11,
+      "firstPartialMs": 570,
+      "switchMs": 0,
+      "flushMs": 1695
+    },
+    {
+      "language": "en",
+      "atMinute": 7.05,
+      "firstPartialMs": 638,
+      "switchMs": 0,
+      "flushMs": 293
+    },
+    {
+      "language": "en",
+      "atMinute": 8.08,
+      "firstPartialMs": 565,
+      "switchMs": 0,
+      "flushMs": 286
+    },
+    {
+      "language": "en",
+      "atMinute": 9.1,
+      "firstPartialMs": 568,
+      "switchMs": 0,
+      "flushMs": 290
+    },
+    {
+      "language": "vi",
+      "atMinute": 10.07,
+      "firstPartialMs": 4205,
+      "switchMs": 4430,
+      "flushMs": 953
+    },
+    {
+      "language": "vi",
+      "atMinute": 10.25,
+      "firstPartialMs": 854,
+      "switchMs": 0,
+      "flushMs": 820
+    }
+  ],
+  "checkpoints": [
+    {
+      "minute": 1.22,
+      "counts": {
+        "Me": 6,
+        "Others": 8
+      },
+      "audioMinutesPerSource": 1.19,
+      "heapMiB": 24.7,
+      "rssMiB": 60.8,
+      "retainedSamples": 14,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 2.01
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 1.4
+        }
+      }
+    },
+    {
+      "minute": 2.22,
+      "counts": {
+        "Me": 10,
+        "Others": 13
+      },
+      "audioMinutesPerSource": 2.18,
+      "heapMiB": 19.1,
+      "rssMiB": 59.1,
+      "retainedSamples": 23,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 1.91
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 1.39
+        }
+      }
+    },
+    {
+      "minute": 3.21,
+      "counts": {
+        "Me": 14,
+        "Others": 19
+      },
+      "audioMinutesPerSource": 3.18,
+      "heapMiB": 19.4,
+      "rssMiB": 59.4,
+      "retainedSamples": 33,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 1.88
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 1.33
+        }
+      }
+    },
+    {
+      "minute": 4.21,
+      "counts": {
+        "Me": 17,
+        "Others": 25
+      },
+      "audioMinutesPerSource": 4.17,
+      "heapMiB": 19.1,
+      "rssMiB": 56.2,
+      "retainedSamples": 42,
+      "streams": {
+        "Me": {
+          "pendingAcks": 5,
+          "unackedBytes": 8000,
+          "finalLagSeconds": 1.98
+        },
+        "Others": {
+          "pendingAcks": 5,
+          "unackedBytes": 8000,
+          "finalLagSeconds": 1.37
+        }
+      }
+    },
+    {
+      "minute": 5.28,
+      "counts": {
+        "Me": 22,
+        "Others": 31
+      },
+      "audioMinutesPerSource": 5.25,
+      "heapMiB": 18.9,
+      "rssMiB": 57,
+      "retainedSamples": 53,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 1.16
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 1.72
+        }
+      }
+    },
+    {
+      "minute": 6.23,
+      "counts": {
+        "Me": 26,
+        "Others": 37
+      },
+      "audioMinutesPerSource": 6.19,
+      "heapMiB": 19.7,
+      "rssMiB": 55.5,
+      "retainedSamples": 63,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 0.21
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 1.25
+        }
+      }
+    },
+    {
+      "minute": 7.16,
+      "counts": {
+        "Me": 30,
+        "Others": 42
+      },
+      "audioMinutesPerSource": 7.12,
+      "heapMiB": 19.7,
+      "rssMiB": 56.1,
+      "retainedSamples": 72,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 0.22
+        },
+        "Others": {
+          "pendingAcks": 3,
+          "unackedBytes": 4800,
+          "finalLagSeconds": 1.62
+        }
+      }
+    },
+    {
+      "minute": 8.18,
+      "counts": {
+        "Me": 34,
+        "Others": 49
+      },
+      "audioMinutesPerSource": 8.14,
+      "heapMiB": 19.4,
+      "rssMiB": 56.4,
+      "retainedSamples": 83,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 1.03
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 1.47
+        }
+      }
+    },
+    {
+      "minute": 9.2,
+      "counts": {
+        "Me": 38,
+        "Others": 56
+      },
+      "audioMinutesPerSource": 9.16,
+      "heapMiB": 19.6,
+      "rssMiB": 56.6,
+      "retainedSamples": 94,
+      "streams": {
+        "Me": {
+          "pendingAcks": 3,
+          "unackedBytes": 4800,
+          "finalLagSeconds": 1
+        },
+        "Others": {
+          "pendingAcks": 3,
+          "unackedBytes": 4800,
+          "finalLagSeconds": 1.44
+        }
+      }
+    },
+    {
+      "minute": 10.38,
+      "counts": {
+        "Me": 43,
+        "Others": 64
+      },
+      "audioMinutesPerSource": 10.34,
+      "heapMiB": 19.5,
+      "rssMiB": 57.4,
+      "retainedSamples": 107,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 1.97
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "finalLagSeconds": 1.39
+        }
+      }
+    }
+  ],
+  "errors": [
+    "Speechmatics xử lý audio chậm hoặc mạng nghẽn; đã dừng để tránh tích lũy độ trễ."
+  ]
+}

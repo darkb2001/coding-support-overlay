@@ -1,0 +1,589 @@
+{
+  "ok": true,
+  "scope": "Production main IPC + real STT/Bridge/LLM + disk persistence; synthetic OS boundaries, not renderer/human accuracy validation",
+  "actions": {
+    "model": "cx/gpt-5.6-luna",
+    "answers": [
+      {
+        "label": "minute-1",
+        "language": "vi",
+        "firstPreviewMs": 4502,
+        "previewEvents": 7,
+        "finalEvents": 1,
+        "interrupted": false,
+        "reply": "• Theo kinh nghiệm CV, tôi có 3 năm dùng Node.js và PostgreSQL; tôi sẽ xử lý đồng thời bằng async I/O, giới hạn connection pool và transaction phù hợp.\n• Về thiết kế giả định, tôi dùng Redis làm lớp rate limiter phân tán giữa các server, áp dụng token bucket hoặc sliding window với thao tác atomic/Lua và TTL; PostgreSQL lưu dữ liệu bền vững.\n• Tôi bổ sung idempotency key, timeout, retry có backoff, monitoring và kiểm thử race condition. Tôi chưa có kinh nghiệm Kubernetes production, nên sẽ phối hợp với đội hạ tầng cho phần triển khai và scaling.",
+        "question": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+        "durationMs": 5294,
+        "ok": true
+      },
+      {
+        "label": "minute-2",
+        "language": "vi",
+        "firstPreviewMs": 7369,
+        "previewEvents": 13,
+        "finalEvents": 1,
+        "interrupted": false,
+        "reply": "• Theo kinh nghiệm CV, tôi có 3 năm với Node.js và PostgreSQL. Node.js xử lý đồng thời chủ yếu qua event loop và các thao tác I/O bất đồng bộ; tôi sẽ tránh tác vụ CPU nặng trong request path.\n• Về thiết kế, tôi dùng connection pool, giới hạn kích thước pool, transaction và cơ chế kiểm soát cạnh tranh như optimistic locking hoặc row-level locking trong PostgreSQL để tránh race condition.\n• Nếu cần nhiều server, đây là thiết kế đề xuất: dùng Redis atomic commands/Lua để rate limit hoặc distributed lock, đặt timeout và retry có kiểm soát. Tôi chưa có kinh nghiệm Kubernetes production, nên không khẳng định phần triển khai đó.",
+        "question": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+        "durationMs": 9021,
+        "ok": true
+      },
+      {
+        "label": "minute-3",
+        "language": "vi",
+        "interruptTo": "en",
+        "firstPreviewMs": 5370,
+        "previewEvents": 1,
+        "finalEvents": 0,
+        "interrupted": true,
+        "reply": "",
+        "question": "",
+        "durationMs": 5373,
+        "cancelled": true
+      },
+      {
+        "label": "minute-4",
+        "language": "en",
+        "firstPreviewMs": 5031,
+        "previewEvents": 4,
+        "finalEvents": 1,
+        "interrupted": false,
+        "reply": "- **Design (hypothetical):** Put a shared Redis rate limiter in front of each Node.js service instance, keyed by user/API key and endpoint. Use a token-bucket or sliding-window algorithm with an atomic Lua script to prevent race conditions across servers.\n- **Flow (hypothetical):** The script checks and updates the counter atomically, sets a TTL, and returns remaining quota plus retry timing. Reject excess requests with HTTP 429; define a deliberate fail-open or fail-closed policy if Redis is unavailable.\n- **Experience:** My CV supports three years with Node.js and PostgreSQL, and I have proposed Redis for distributed limiting. PostgreSQL would store persistent configuration or usage records, not handle every limiter decision. I have no production Kubernetes experience.",
+        "question": "Would you design a rate limiter for concurrent requests across multiple servers?",
+        "durationMs": 5485,
+        "ok": true
+      },
+      {
+        "label": "minute-5",
+        "language": "en",
+        "firstPreviewMs": 6237,
+        "previewEvents": 21,
+        "finalEvents": 1,
+        "interrupted": false,
+        "reply": "• I have three years of experience with Node.js and PostgreSQL; Redis is part of the proposed design rather than confirmed production experience.\n• I would use Redis with an atomic Lua script implementing a token-bucket or sliding-window algorithm. Each server checks the same key, so concurrent requests are coordinated consistently across instances.\n• I would set key expirations, return HTTP 429 with retry metadata, and monitor latency, rejection rates, and Redis failures. PostgreSQL would remain the source of truth for persistent business data, not per-request rate-limit state.",
+        "question": "How would you design a rate limiter for concurrent requests across multiple servers?",
+        "durationMs": 8443,
+        "ok": true
+      },
+      {
+        "label": "minute-6",
+        "language": "en",
+        "interruptTo": "vi",
+        "firstPreviewMs": 3603,
+        "previewEvents": 1,
+        "finalEvents": 0,
+        "interrupted": true,
+        "reply": "",
+        "question": "",
+        "durationMs": 3605,
+        "cancelled": true
+      },
+      {
+        "label": "minute-7",
+        "language": "vi",
+        "firstPreviewMs": 3826,
+        "previewEvents": 11,
+        "finalEvents": 1,
+        "interrupted": false,
+        "reply": "• Theo kinh nghiệm trong CV, tôi có 3 năm làm với Node.js và PostgreSQL. Với Node.js, tôi xử lý I/O bất đồng bộ và tránh các tác vụ CPU nặng chặn event loop.\n• Về thiết kế giả định, tôi dùng các server stateless phía sau load balancer. Rate limiter dùng Redis dùng chung giữa các server, áp dụng token bucket hoặc sliding window; thao tác kiểm tra và cập nhật cần atomic, chẳng hạn Redis Lua script.\n• Nếu vượt giới hạn, trả HTTP 429 kèm Retry-After. PostgreSQL dùng cho dữ liệu bền vững, không dùng làm bộ đếm tốc độ chính. Tôi chưa có kinh nghiệm Kubernetes production, nên phần triển khai Kubernetes chỉ là hướng tiếp cận giả định.",
+        "question": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+        "durationMs": 4937,
+        "ok": true
+      },
+      {
+        "label": "minute-8",
+        "language": "vi",
+        "firstPreviewMs": 4080,
+        "previewEvents": 9,
+        "finalEvents": 1,
+        "interrupted": false,
+        "reply": "• Theo kinh nghiệm CV, tôi có 3 năm sử dụng Node.js và PostgreSQL. Với Node.js, tôi tránh tác vụ blocking, dùng async I/O và giới hạn concurrency cho các tác vụ nặng.\n• Về thiết kế đề xuất, các server nên stateless; dùng Redis làm bộ đếm dùng chung với thuật toán token bucket/sliding window, thao tác atomic bằng Lua hoặc INCR/EXPIRE để tránh race condition.\n• Dữ liệu nghiệp vụ lưu ở PostgreSQL, dùng transaction và idempotency key khi cần. Tôi chưa có kinh nghiệm Kubernetes production, nên sẽ triển khai theo môi trường hiện có và theo dõi latency, error rate, Redis/PostgreSQL saturation để điều chỉnh.",
+        "question": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+        "durationMs": 4953,
+        "ok": true
+      },
+      {
+        "label": "minute-9",
+        "language": "vi",
+        "firstPreviewMs": 5266,
+        "previewEvents": 10,
+        "finalEvents": 1,
+        "interrupted": false,
+        "reply": "• Theo kinh nghiệm CV, tôi có 3 năm sử dụng Node.js và PostgreSQL. Với Node.js, tôi xử lý I/O bất đồng bộ, tránh tác vụ CPU nặng trên event loop và dùng worker/queue nếu cần.\n• Trong thiết kế giả định cho nhiều server, tôi dùng Redis làm lớp phân phối trạng thái, chẳng hạn token bucket hoặc sliding window; thao tác kiểm tra–trừ quota nên atomic bằng Lua hoặc lệnh phù hợp để tránh race condition.\n• PostgreSQL lưu dữ liệu bền vững, dùng transaction, index và connection pool. Tôi cũng theo dõi latency, error rate và tải Redis/database. CV chưa cung cấp kinh nghiệm production với Kubernetes, nên tôi không khẳng định phần triển khai đó.",
+        "question": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+        "durationMs": 6749,
+        "ok": true
+      }
+    ],
+    "switches": [
+      {
+        "language": "en",
+        "durationMs": 4456,
+        "sameMeeting": true
+      },
+      {
+        "language": "vi",
+        "durationMs": 8941,
+        "sameMeeting": true
+      },
+      {
+        "language": "en",
+        "durationMs": 4804,
+        "sameMeeting": true
+      },
+      {
+        "language": "vi",
+        "durationMs": 3672,
+        "sameMeeting": true
+      }
+    ],
+    "busyRejected": true,
+    "savedTurns": 101,
+    "sameMeeting": true,
+    "statuses": [
+      "starting",
+      "idle",
+      "switching-language",
+      "idle",
+      "switching-language",
+      "idle",
+      "suggesting",
+      "idle",
+      "suggesting",
+      "idle",
+      "suggesting",
+      "switching-language",
+      "switching-language",
+      "idle",
+      "suggesting",
+      "idle",
+      "suggesting",
+      "idle",
+      "suggesting",
+      "switching-language",
+      "switching-language",
+      "idle",
+      "suggesting",
+      "idle",
+      "suggesting",
+      "idle",
+      "suggesting",
+      "idle",
+      "stopped"
+    ]
+  },
+  "elapsedMinutes": 10.01,
+  "silentOnlyFlush": "passed",
+  "counts": {
+    "Me": 43,
+    "Others": 58
+  },
+  "phases": [
+    {
+      "language": "vi",
+      "atMinute": 0.05,
+      "firstPartialMs": 1088,
+      "switchMs": 0,
+      "flushMs": 1026
+    },
+    {
+      "language": "en",
+      "atMinute": 0.18,
+      "firstPartialMs": 4159,
+      "switchMs": 4457,
+      "flushMs": 398
+    },
+    {
+      "language": "vi",
+      "atMinute": 0.28,
+      "firstPartialMs": 8331,
+      "switchMs": 8941,
+      "flushMs": 2132
+    },
+    {
+      "language": "vi",
+      "atMinute": 1.1,
+      "firstPartialMs": 843,
+      "switchMs": 0,
+      "flushMs": 829
+    },
+    {
+      "language": "vi",
+      "atMinute": 2.1,
+      "firstPartialMs": 863,
+      "switchMs": 0,
+      "flushMs": 755
+    },
+    {
+      "language": "vi",
+      "atMinute": 3.1,
+      "firstPartialMs": 901,
+      "switchMs": 0,
+      "flushMs": 1465
+    },
+    {
+      "language": "en",
+      "atMinute": 4.06,
+      "firstPartialMs": 518,
+      "switchMs": 0,
+      "flushMs": 334
+    },
+    {
+      "language": "en",
+      "atMinute": 5.08,
+      "firstPartialMs": 505,
+      "switchMs": 0,
+      "flushMs": 303
+    },
+    {
+      "language": "en",
+      "atMinute": 6.11,
+      "firstPartialMs": 508,
+      "switchMs": 0,
+      "flushMs": 922
+    },
+    {
+      "language": "vi",
+      "atMinute": 7.09,
+      "firstPartialMs": 898,
+      "switchMs": 0,
+      "flushMs": 862
+    },
+    {
+      "language": "vi",
+      "atMinute": 8.08,
+      "firstPartialMs": 910,
+      "switchMs": 0,
+      "flushMs": 813
+    },
+    {
+      "language": "vi",
+      "atMinute": 9.08,
+      "firstPartialMs": 891,
+      "switchMs": 0,
+      "flushMs": 862
+    }
+  ],
+  "checkpoints": [
+    {
+      "minute": 1.23,
+      "counts": {
+        "Me": 6,
+        "Others": 8
+      },
+      "audioMinutesPerSource": 1.23,
+      "heapMiB": 12.8,
+      "rssMiB": 34.2,
+      "retainedSamples": 14,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.96
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.38
+        }
+      }
+    },
+    {
+      "minute": 2.23,
+      "counts": {
+        "Me": 10,
+        "Others": 13
+      },
+      "audioMinutesPerSource": 2.22,
+      "heapMiB": 11.4,
+      "rssMiB": 36.1,
+      "retainedSamples": 23,
+      "streams": {
+        "Me": {
+          "pendingAcks": 3,
+          "unackedBytes": 4800,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.87
+        },
+        "Others": {
+          "pendingAcks": 3,
+          "unackedBytes": 4800,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.32
+        }
+      }
+    },
+    {
+      "minute": 3.24,
+      "counts": {
+        "Me": 15,
+        "Others": 20
+      },
+      "audioMinutesPerSource": 3.23,
+      "heapMiB": 11.5,
+      "rssMiB": 34.7,
+      "retainedSamples": 35,
+      "streams": {
+        "Me": {
+          "pendingAcks": 3,
+          "unackedBytes": 4800,
+          "queuedBytes": 0,
+          "finalLagSeconds": 0.2
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 0.56
+        }
+      }
+    },
+    {
+      "minute": 4.16,
+      "counts": {
+        "Me": 19,
+        "Others": 25
+      },
+      "audioMinutesPerSource": 4.16,
+      "heapMiB": 11.9,
+      "rssMiB": 32.8,
+      "retainedSamples": 44,
+      "streams": {
+        "Me": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.1
+        },
+        "Others": {
+          "pendingAcks": 5,
+          "unackedBytes": 8000,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.58
+        }
+      }
+    },
+    {
+      "minute": 5.19,
+      "counts": {
+        "Me": 24,
+        "Others": 31
+      },
+      "audioMinutesPerSource": 5.18,
+      "heapMiB": 12.5,
+      "rssMiB": 32.8,
+      "retainedSamples": 55,
+      "streams": {
+        "Me": {
+          "pendingAcks": 3,
+          "unackedBytes": 4800,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.03
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.51
+        }
+      }
+    },
+    {
+      "minute": 6.22,
+      "counts": {
+        "Me": 29,
+        "Others": 36
+      },
+      "audioMinutesPerSource": 6.21,
+      "heapMiB": 11.6,
+      "rssMiB": 32.1,
+      "retainedSamples": 65,
+      "streams": {
+        "Me": {
+          "pendingAcks": 3,
+          "unackedBytes": 4800,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.65
+        },
+        "Others": {
+          "pendingAcks": 3,
+          "unackedBytes": 4800,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.65
+        }
+      }
+    },
+    {
+      "minute": 7.22,
+      "counts": {
+        "Me": 33,
+        "Others": 42
+      },
+      "audioMinutesPerSource": 7.2,
+      "heapMiB": 11.6,
+      "rssMiB": 32.7,
+      "retainedSamples": 75,
+      "streams": {
+        "Me": {
+          "pendingAcks": 3,
+          "unackedBytes": 4800,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.97
+        },
+        "Others": {
+          "pendingAcks": 4,
+          "unackedBytes": 6400,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.33
+        }
+      }
+    },
+    {
+      "minute": 8.21,
+      "counts": {
+        "Me": 36,
+        "Others": 48
+      },
+      "audioMinutesPerSource": 8.2,
+      "heapMiB": 11.8,
+      "rssMiB": 35.7,
+      "retainedSamples": 84,
+      "streams": {
+        "Me": {
+          "pendingAcks": 3,
+          "unackedBytes": 4800,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.93
+        },
+        "Others": {
+          "pendingAcks": 3,
+          "unackedBytes": 4800,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.32
+        }
+      }
+    },
+    {
+      "minute": 9.21,
+      "counts": {
+        "Me": 40,
+        "Others": 53
+      },
+      "audioMinutesPerSource": 9.2,
+      "heapMiB": 12.1,
+      "rssMiB": 37.7,
+      "retainedSamples": 93,
+      "streams": {
+        "Me": {
+          "pendingAcks": 3,
+          "unackedBytes": 4800,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.84
+        },
+        "Others": {
+          "pendingAcks": 3,
+          "unackedBytes": 4800,
+          "queuedBytes": 0,
+          "finalLagSeconds": 1.36
+        }
+      }
+    },
+    {
+      "minute": 10.01,
+      "counts": {
+        "Me": 43,
+        "Others": 58
+      },
+      "audioMinutesPerSource": 9.99,
+      "heapMiB": 12.6,
+      "rssMiB": 38,
+      "retainedSamples": 101,
+      "streams": {
+        "Me": {
+          "pendingAcks": 0,
+          "unackedBytes": 0,
+          "queuedBytes": 0,
+          "finalLagSeconds": 0.12
+        },
+        "Others": {
+          "pendingAcks": 0,
+          "unackedBytes": 0,
+          "queuedBytes": 0,
+          "finalLagSeconds": 0.12
+        }
+      }
+    }
+  ],
+  "peaks": {
+    "queuedBytes": 1600,
+    "unackedBytes": 64000,
+    "pendingAcks": 40,
+    "pacingLagMs": 27
+  },
+  "transcriptTurns": 101,
+  "finals": [
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+      "ts": 1792215565835
+    },
+    {
+      "speaker": "Me",
+      "text": "Tôi dùng Real tái sờ của nó PostgreSQL. Stress để phát triển phần mềm mềm.",
+      "ts": 1792215573035
+    },
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+      "ts": 1792215582755
+    },
+    {
+      "speaker": "Me",
+      "text": "Tôi dùng Real tái sờ của Node.js và to interest để phát triển phần mềm.",
+      "ts": 1792215582755
+    },
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+      "ts": 1792215589955
+    },
+    {
+      "speaker": "Me",
+      "text": "Tôi dùng. Real tái sờ của nó to stress để phát triển phần mềm mềm.",
+      "ts": 1792215591035
+    },
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+      "ts": 1792215597515
+    },
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+      "ts": 1792215611915
+    },
+    {
+      "speaker": "Me",
+      "text": "Tôi dùng Real tái sờ của nó. PostgreSQL Stress để phát triển phần mềm mềm Tôi dùng Real tái sờ clip Node.js và to interest để phát triển phần mềm.",
+      "ts": 1792215604715
+    },
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+      "ts": 1792215618755
+    },
+    {
+      "speaker": "Others",
+      "text": "Bạn giải thích cách thiết kế hệ thống xử lý nhiều yêu cầu đồng thời được không?",
+      "ts": 1792215632795
+    },
+    {
+      "speaker": "Me",
+      "text": "Tôi dùng real tái Node.js. Và PostgreSQL. Để phát triển phần mềm phần mềm. Tôi dùng Real. Tái sờ của nó To stress để phát triển.",
+      "ts": 1792215625595
+    }
+  ],
+  "errors": []
+}
